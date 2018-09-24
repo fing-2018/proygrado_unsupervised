@@ -9,9 +9,32 @@
 
 import pyfreeling
 import sys, os
-import conll2tree
-import subtreetagger
-import generaroraciones
+
+## ------------  output a parse tree ------------
+def printTree(ptree, depth):
+
+    node = ptree.begin();
+
+    print(''.rjust(depth*2),end='');
+    info = node.get_info();
+    if (info.is_head()): print('+',end='');
+
+    nch = node.num_children();
+    if (nch == 0) :
+        w = info.get_word();
+        print ('({0} {1} {2})'.format(w.get_form(), w.get_lemma(), w.get_tag()),end='');
+
+    else :
+        print('{0}_['.format(info.get_label()));
+
+        for i in range(nch) :
+            child = node.nth_child_ref(i);
+            printTree(child, depth+1);
+
+        print(''.rjust(depth*2),end='');
+        print(']',end='');
+        
+    print('');
 
 ## ------------  output a parse tree ------------
 def printDepTree(dtree, depth):
@@ -22,8 +45,8 @@ def printDepTree(dtree, depth):
 
     info = node.get_info();
     link = info.get_link();
-    #print ('{0}/{1}/'.format(link.get_info().get_label(), info.get_label()),end='');
-    print ('{0}/'.format(info.get_label()),end='');
+    linfo = link.get_info();
+    print ('{0}/{1}/'.format(link.get_info().get_label(), info.get_label()),end='');
 
     w = node.get_info().get_word();
     print ('({0} {1} {2})'.format(w.get_form(), w.get_lemma(), w.get_tag()),end='');
@@ -100,65 +123,44 @@ sid=sp.open_session();
 mf=pyfreeling.maco(op);
 
 # activate mmorpho odules to be used in next call
-mf.set_active_options (False,  # UserMap 
-                          True,  # NumbersDetection,  
-                          True,  # PunctuationDetection,   
-                          True,  # DatesDetection,    
-                          True,  # DictionarySearch,  
-                          True,  # AffixAnalysis,  
-                          False, # CompoundAnalysis, 
-                          True,  # RetokContractions,
-                          True,  # MultiwordsDetection,  
-                          True,  # NERecognition,     
-                          True, # QuantitiesDetection,  
-                          True); # ProbabilityAssignment  
+mf.set_active_options(False, True, True, True,  # select which among created 
+                      True, True, False, True,  # submodules are to be used. 
+                      True, True, True, True ); # default: all created submodules are used
 
 # create tagger, sense anotator, and parsers
 tg=pyfreeling.hmm_tagger(DATA+LANG+"/tagger.dat",True,2);
 sen=pyfreeling.senses(DATA+LANG+"/senses.dat");
-wsd = pyfreeling.ukb(DATA+LANG+"/ukb.dat");
-parser = pyfreeling.dep_treeler(DATA+LANG+"/treeler/dependences.dat");
+parser= pyfreeling.chart_parser(DATA+LANG+"/chunker/grammar-chunk.dat");
+dep=pyfreeling.dep_txala(DATA+LANG+"/dep_txala/dependences.dat", parser.get_start_symbol());
 
 # process input text
-#lin=sys.stdin.readline();
-lin="La tormenta azotó Montevideo."
+lin=sys.stdin.readline();
 
 print ("Text language is: "+la.identify_language(lin)+"\n");
 
 while (lin) :
         
     l = tk.tokenize(lin);
-    ls = sp.split(l);
+    ls = sp.split(sid,l,False);
 
     ls = mf.analyze(ls);
     ls = tg.analyze(ls);
     ls = sen.analyze(ls);
-    ls = wsd.analyze(ls)
     ls = parser.analyze(ls);
-
-    out = pyfreeling.output_conll()
-    #out = freeling.output_conll("out2.cfg")
-    # print results 
-    res = out.PrintResults(ls)
-    print(res)
-    dep_tree = conll2tree.conll2tree(res).children()[0][1]
-
-    subtreetagger.tagtree(dep_tree)
-
-    dep_tree.display(0)
-    
-
-    generaroraciones.main(dep_tree)
+    ls = dep.analyze(ls);
 
     ## output results
-    #for s in ls :
-    #   ws = s.get_words();
-    #   for w in ws :
-    #      print(w.get_form()+" "+w.get_lemma()+" "+w.get_tag()+" "+w.get_senses_string());
-    #   print ("");
+    for s in ls :
+       ws = s.get_words();
+       for w in ws :
+          print(w.get_form()+" "+w.get_lemma()+" "+w.get_tag()+" "+w.get_senses_string());
+       print ("");
 
-    #   dp = s.get_dep_tree();
-    #   printDepTree(dp, 0)
+       tr = s.get_parse_tree();
+       printTree(tr, 0);
+
+       dp = s.get_dep_tree();
+       printDepTree(dp, 0)
 
     lin=sys.stdin.readline();
     
