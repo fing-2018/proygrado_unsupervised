@@ -10,52 +10,17 @@
 import pyfreeling
 import sys, os
 import conll2tree
-import subtreetagger
 import generaroraciones
+from subprocess import Popen, PIPE
 
-## ------------  output a parse tree ------------
-def printDepTree(dtree, depth):
-
-    node = dtree.begin()
-
-    print(''.rjust(depth*2),end='');
-
-    info = node.get_info();
-    link = info.get_link();
-    #print ('{0}/{1}/'.format(link.get_info().get_label(), info.get_label()),end='');
-    print ('{0}/'.format(info.get_label()),end='');
-
-    w = node.get_info().get_word();
-    print ('({0} {1} {2})'.format(w.get_form(), w.get_lemma(), w.get_tag()),end='');
-
-    nch = node.num_children();
-    if (nch > 0) :
-        print(' [');
-
-        for i in range(nch) :
-            d = node.nth_child_ref(i);
-            if (not d.begin().get_info().is_chunk()) :
-                printDepTree(d, depth+1);
-
-        ch = {};
-        for i in range(nch) :
-            d = node.nth_child_ref(i);
-            if (d.begin().get_info().is_chunk()) :
-                ch[d.begin().get_info().get_chunk_ord()] = d;
- 
-        for i in sorted(ch.keys()) :
-            printDepTree(ch[i], depth + 1);
-
-        print(''.rjust(depth*2),end='');
-        print(']',end='');
-
-    print('');
-
-
+ruta_archivos = sys.argv[1]
 
 ## ----------------------------------------------
 ## -------------    MAIN PROGRAM  ---------------
 ## ----------------------------------------------
+print("Se muere la acer....")
+
+argOE_script='/home/pablo/repos/Linguakit/linguakit'
 
 ## Check whether we know where to find FreeLing data files
 if "FREELINGDIR" not in os.environ :
@@ -117,50 +82,36 @@ mf.set_active_options (False,  # UserMap
 tg=pyfreeling.hmm_tagger(DATA+LANG+"/tagger.dat",True,2);
 sen=pyfreeling.senses(DATA+LANG+"/senses.dat");
 wsd = pyfreeling.ukb(DATA+LANG+"/ukb.dat");
-parser = pyfreeling.dep_treeler(DATA+LANG+"/treeler/dependences.dat");
+parser = pyfreeling.dep_lstm(DATA+LANG+"/dep_lstm/params-es.dat");
 
-# process input text
-#lin=sys.stdin.readline();
-lin="La tormenta azotó Montevideo."
+for filepath in os.listdir(ruta_archivos):
+    file = os.path.join(ruta_archivos, filepath)
 
-print ("Text language is: "+la.identify_language(lin)+"\n");
+    process = Popen([argOE_script, 'rel', 'es', file], stdout=PIPE)
+    (output, err) = process.communicate()
+    exit_code = process.wait()
+    print(output.decode('utf-8'))
 
-while (lin) :
+    content = open(file, 'r').read()
         
-    l = tk.tokenize(lin);
-    ls = sp.split(l);
-
-    ls = mf.analyze(ls);
-    ls = tg.analyze(ls);
-    ls = sen.analyze(ls);
+    l = tk.tokenize(content)
+    ls = sp.split(l)
+    ls = mf.analyze(ls)
+    ls = tg.analyze(ls)
+    ls = sen.analyze(ls)
     ls = wsd.analyze(ls)
-    ls = parser.analyze(ls);
-
-    out = pyfreeling.output_conll()
-    #out = freeling.output_conll("out2.cfg")
-    # print results 
-    res = out.PrintResults(ls)
-    print(res)
-    dep_tree = conll2tree.conll2tree(res).children()[0][1]
-
-    subtreetagger.tagtree(dep_tree)
-
-    dep_tree.display(0)
+    ls = parser.analyze(ls)
     
+    out = pyfreeling.output_conll()
+    res = out.PrintResults(ls)
+    conll_sentences = res.split('\n\n')
+    conll_sentences.pop()
+    for conll_sentence in conll_sentences:
+        dep_tree = conll2tree.conll2tree(conll_sentence).children[0][1]
+        #dep_tree.display(0)
+        sentenceListArgOE=generaroraciones.main(dep_tree)
+        #print(sentenceListArgOE)
 
-    generaroraciones.main(dep_tree)
-
-    ## output results
-    #for s in ls :
-    #   ws = s.get_words();
-    #   for w in ws :
-    #      print(w.get_form()+" "+w.get_lemma()+" "+w.get_tag()+" "+w.get_senses_string());
-    #   print ("");
-
-    #   dp = s.get_dep_tree();
-    #   printDepTree(dp, 0)
-
-    lin=sys.stdin.readline();
     
 # clean up       
 sp.close_session(sid);

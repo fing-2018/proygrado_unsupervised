@@ -14,44 +14,48 @@ class Node:
         self._coref = COREF
         self._srl = SRL
         self._children = []
-        self._subtreetags = set()
-
+    
+    @property
     def children(self):
         return self._children
 
+    @property
     def dephead(self):
         return self._dephead
 
+    @property
+    def nec(self):
+        return self._nec
+
+    @property
     def deprel(self):
         return self._deprel
 
+    @property
     def id(self):
         return self._id
 
+    @property
     def form(self):
         return self._form
 
+    @property
     def tag(self):
         return self._tag
 
-    def children(self):
-        return self._children
-
-    def subtree_tags(self):
-        return self._subtreetags
+    @property
+    def lemma(self):
+        return self._lemma
 
     def add_child(self, node):
-        self._children.append((node.deprel(), node))
-
-    def add_subtree_tag(self, tag):
-        self._subtreetags.add(tag)
+        self._children.append((node.deprel, node))
 
     def display(self, depth):
         print(''.rjust(depth*2),end='')
 
-        print ('{0}/{1}'.format(self.form(), self.subtree_tags()),end='')
+        print ('{0}'.format(self.form),end='')
 
-        children = self.children()
+        children = self.children
         if (len(children) > 0) :
 
             for child in children:
