@@ -8,6 +8,7 @@ class Event(object):
         self._circumstance_complements = []
         self._parent_verb = parent_verb
         self._type = -1
+		self._label = ""
 
     @property
     def verb(self):
@@ -28,6 +29,14 @@ class Event(object):
     @obj.setter
     def obj(self, obj):
         self._obj = obj
+		
+	@property
+    def label(self):
+        return self._label
+
+    @label.setter
+    def label(self, label):
+        self._label = label
 
     @property
     def parent_verb(self):

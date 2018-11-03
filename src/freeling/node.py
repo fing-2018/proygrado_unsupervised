@@ -46,6 +46,7 @@ class Node:
     @property
     def lemma(self):
         return self._lemma
+		
 
     def add_child(self, node):
         self._children.append((node.deprel, node))

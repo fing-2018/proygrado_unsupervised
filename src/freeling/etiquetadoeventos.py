@@ -18,20 +18,20 @@ class Etiquetado_eventos():
 		label=self.list_corpus_files[self.index_corpus(list_occurs)].split(".")[0]
 		res["label"]=label
 		for e in event_list:
-			e.set_type(label)
+			e.label(label)
 		print(list_occurs)
 		return label
 	
 	def word_list(self,event_list):
 		word_list=[]
 		for e in event_list:
-			#print(str(e.lemma_verb()))
-			if e.lemma_verb() != None and e.lemma_verb()!="": 
-				word_list.append(e.lemma_verb())
-			if e.lemma_subj() != None and e.lemma_subj()!="":
-				word_list.append(e.lemma_subj())
-			if e.lemma_obj() != None and e.lemma_obj()!="":
-				word_list.append(e.lemma_obj())
+			#print(str(e.verb))
+			if e.verb.lemma != None and e.verb.lemma!="": 
+				word_list.append(e.verb.lemma)
+			if e.subj.lemma != None and e.subj.lemma!="":
+				word_list.append(e.subj)
+			if e.obj.lemma != None and e.obj.lemma!="":
+				word_list.append(e.obj.lemma)
 		return word_list
 		
 	def index_corpus(self,list_occurs):
