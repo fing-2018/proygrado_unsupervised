@@ -8,7 +8,7 @@ class Event(object):
         self._circumstance_complements = []
         self._parent_verb = parent_verb
         self._type = -1
-		self._label = ""
+        self._label = "NONE"
 
     @property
     def verb(self):
@@ -29,8 +29,8 @@ class Event(object):
     @obj.setter
     def obj(self, obj):
         self._obj = obj
-		
-	@property
+        
+    @property
     def label(self):
         return self._label
 
@@ -60,3 +60,6 @@ class Event(object):
     @complement.setter
     def complement(self, node):
         self._complement = node
+
+    def __repr__(self):
+        return '{}: {} {} {} {} {}'.format(self.__class__.__name__, self.verb.form, self.subj.form, self.obj.form, self.type, self.label)
