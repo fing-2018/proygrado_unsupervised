@@ -1,0 +1,585 @@
+[True, True, False, True, True, False]
+###############
+En una carta enviada a los legisladores , el subsecretario de la Asamblea_Nacional , Jaime_Bonilla , dijo que la reforma era inconstitucional porque una anterior fue rechazada el 9_de_mayo_de_1996 por la asamblea y , según la ley nicaraguense , intento subsecuente hasta que no se forme la próxima legislatura .
+
+1
+Arg1 =  una carta 
+Rel =  enviada a 
+Arg2 =  los legisladores 
+\\Arg1 =  una carta 
+Rel =  enviada a 
+Arg2 =  el subsecretario de la Asamblea_Nacional 
+\\Arg1 =  una carta 
+Rel =  enviada a 
+Arg2 =  Jaime_Bonilla 
+1
+293 301
+1
+	 No matches for right argument
+1
+367 482
+###############
+A las 2200 horas de el domingo , las autoridades recibieron una llamada de los captores , dirigiéndoles a el área en el distrito La_Mesa_de_Tijuana , donde encontraron a Konno " cansado pero aparentemente ileso " en el sótano de un edificio en desuso " , siguió diciendo .
+
+2
+Arg1 =  las autoridades 
+Rel =  recibieron una llamada de 
+Arg2 =  los captores 
+2
+468 497
+2
+789 804
+###############
+Por su parte , Williams logró balance de 3-10 con un promedio de efectividad de 6,93 en 32 juegos para Detroit .
+
+3
+\\Arg1 =  Williams 
+Rel =  logró balance de 
+Arg2 =  un promedio de efectividad 
+###############
+A las 11.00 horas locales ( 0300 GMT ) de el lunes , el centro de la tormenta tropical Dolly se encontraba a 18,7 grados de latitud norte , 85,0 grados de longitud oeste , o unos 280_kilómetros a el sudeste de Cozumel , México , y se desplazaba en dirección oeste-noroeste a_cerca_de las 23_kilómetros_por_hora .
+
+4
+\\Arg1 =  Dolly 
+Rel =  se encontraba a 
+Arg2 =  grados de latitud 
+4
+721 736
+###############
+Por su parte el jefe de el estado mayor rebelde , Aslan_Maskhadov , hizo un llamamiento el martes a Lebed para que impida que las fuerzas federales traten de sacar por la fuerza a los rebeldes en Grozny .
+
+5
+213 221
+###############
+Desde la guerra civil que los dividió en 1949 , China considera a Taiwán como una provincia rebelde que no puede mantener relaciones exteriores soberanas .
+
+6
+\\Arg1 =  la guerra civil 
+Rel =  dividió en 
+Arg2 =  1949 
+\\Arg1 =  la guerra civil 
+Rel =  dividió en 
+Arg2 =  China 
+6
+\\Arg1 =  China 
+Rel =  considera a 
+Arg2 =  Taiwán 
+6
+Arg1 =  una provincia rebelde 
+Rel =  no puede mantener 
+Arg2 =  relaciones exteriores soberanas 
+###############
+Por_ejemplo , el informe señala que las sanciones son mucho más efectivas cuando son aprobadas por miembros de la ONU , como las que se aplicaron contra Irak , Libia y anteriormente_a Haití , que cuando son impuestas unilateralmente por Estados_Unidos , como en el caso de Irán y Cuba .
+
+7
+Arg1 =  el informe 
+Rel =  señala 
+Arg2 =  las sanciones 
+7
+	 No matches for right argument
+7
+144 230
+7
+\\Arg1 =  miembros de la ONU 
+Rel =  se aplicaron contra 
+Arg2 =  Irak 
+\\Arg1 =  miembros de la ONU 
+Rel =  se aplicaron contra 
+Arg2 =  Libia 
+7
+\\Arg1 =  Haití 
+Rel =  son impuestas unilateralmente por 
+Arg2 =  Estados_Unidos 
+###############
+En Brasil , Japón está involucrado en una disputa comercial sobre aranceles a automóviles , mientras_que el secuestro de un ejecutivo japonés en Tijuana , ciudad mexicana fronteriza con Estados_Unidos , ha levantado dudas sobre la seguridad de las compañías japonesas .
+
+8
+Arg1 =  Japón 
+Rel =  está involucrado en 
+Arg2 =  una disputa comercial sobre aranceles 
+8
+597 605
+###############
+En México , se espera que Hashimoto busque asegurar se de que las compañías japonesas que inicien sus operaciones en suelo mexicano se beneficien de el acceso a los mercados de Canadá y Estados_Unidos mediante el Acuerdo_de_Libre_Comercio_de_América_de_el_Norte .
+
+9
+33 41
+###############
+En Costa_Rica , Hashimoto participará en varias reuniones con otros líderes de America_Central para estudiar cómo Japón puede colaborar con su desarrollo .
+
+10
+Arg1 =  Hashimoto 
+Rel =  participará en 
+Arg2 =  varias reuniones con otros líderes 
+10
+Arg1 =  Japón 
+Rel =  puede colaborar con 
+Arg2 =  su desarrollo 
+###############
+En una entrevista con el diario Tuoi_Tre , el ministro de Agricultura , Nguyen_Cong_Tan , dijo que se desconoce la suerte de 635 personas y advirtió que pasará algún tiempo hasta que se sepa la cifra definitiva de muertos .
+
+11
+268 276
+11
+268 306
+11
+431 439
+11
+431 476
+###############
+" En principio , no me molesta una política de firmeza " , declaró el político .
+
+12
+46 54
+12
+179 194
+###############
+En el exterior de la iglesia , activistas de derechos humanos e izquierdistas y otros ciudadanos no afiliados a grupo alguno yacían en el piso sobre sus bolsas para dormir , listos para formar una barrera humana frente_a cualquier incursión policial , que creen podría ser inminente .
+
+13
+355 379
+13
+	 No matches for right argument
+13
+	 No matches for right argument
+###############
+Por_separado , el diario Het_Laatste_Nieuws informó que los padres de An_Marchal y Eefje_Lambrecks , que desaparecieron en el puerto de Ostend en agosto_de_1995 , están sometidos a una presión " insoportable " .
+
+14
+\\Arg1 =  el diario Het_Laatste_Nieuws 
+Rel =  informó 
+Arg2 =  los padres de An_Marchal 
+\\Arg1 =  el diario Het_Laatste_Nieuws 
+Rel =  informó 
+Arg2 =  Eefje_Lambrecks 
+14
+\\Arg1 =  Eefje_Lambrecks 
+Rel =  desaparecieron en 
+Arg2 =  el puerto de Ostend 
+14
+\\Arg1 =  Eefje_Lambrecks 
+Rel =  están sometidos a 
+Arg2 =  una presión 
+###############
+De los 15 niños desaparecidos en Bélgica en los últimos seis años , siete han sido encontrados muertos , seis están desaparecidos y dos , Laetitia_Delhez y Sabine_Dardenne , fueron rescatadas con vida .
+
+15
+\\Arg1 =  niños 
+Rel =  desaparecidos en Bélgica en 
+Arg2 =  años 
+15
+301 318
+15
+480 488
+###############
+" En las próximas horas se decidirá la cuestión de realizar una operación quirúrgica " , dijo la emisora .
+
+16
+\\Arg1 =  las próximas horas 
+Rel =  se decidirá la cuestión de realizar 
+Arg2 =  una operación quirúrgica 
+16
+\\Arg1 =  las próximas horas 
+Rel =  dijo 
+Arg2 =  la emisora 
+###############
+En una reunión convocada para examinar un informe final sobre las negociaciones de el pacto , la embajadora india Arundhati_Ghose atacó con vigor el texto , dijo que es desequilibrado y violatorio de la soberanía de su país .
+
+17
+Arg1 =  una reunión 
+Rel =  convocada para examinar un informe final sobre 
+Arg2 =  las negociaciones de el pacto 
+\\Arg1 =  una reunión 
+Rel =  convocada para examinar un informe final sobre 
+Arg2 =  la embajadora india 
+17
+\\Arg1 =  Arundhati_Ghose 
+Rel =  atacó con 
+Arg2 =  vigor 
+17
+	 No matches for right argument
+17
+483 521
+###############
+En los últimos 40 años , la tierra se ha hundido en más de 700_milímetros en los distritos de el este de la ciudad y en 600_milímetros en las de el noreste , dañando inmuebles y tuberías subterráneas , indicó Xinhua .
+
+18
+Arg1 =  la tierra 
+Rel =  se ha hundido en 
+Arg2 =  los distritos de el este 
+18
+617 625
+###############
+" En Chile tenemos un déficit de infraestructuras y por tanto hay grandes necesidades " , dijo Manuel_Valencia , quien asiste en Santander a un seminario sobre la Unión_Europea y Mercosur , en entrevista con Reuters .
+
+19
+\\Arg1 =  Chile 
+Rel =  tenemos un déficit de 
+Arg2 =  infraestructuras 
+19
+151 173
+19
+257 272
+19
+Arg1 =  Manuel_Valencia 
+Rel =  asiste en 
+Arg2 =  Santander a un seminario 
+###############
+A parte de chupar sangre , llevan una vida normal .
+
+20
+85 93
+###############
+En_vez_de hincar sus colmillos en las yugulares de sus donantes , Presley dice que usa una hoja de afeiter a una aguja para hacer una incisión en la parte interna de el brazo y chupa después_de la herida . " Pero no muy fuerte porque sino la vena colapsa " , advierte .
+
+21
+	 No matches for right argument
+21
+222 253
+21
+	 No matches for right argument
+21
+	 No matches for right argument
+###############
+En el torneo participan aquéllos equipos que alguna vez ganaron la Copa_Libertadores_de_América .
+
+22
+\\Arg1 =  el torneo 
+Rel =  participan 
+Arg2 =  equipos 
+22
+\\Arg1 =  alguna vez 
+Rel =  ganaron 
+Arg2 =  la Copa_Libertadores_de_América 
+###############
+En_contra_de lo que se informó en un principio , el hombre apoyaba a los grupos antirracistas , no a los neonazis .
+
+23
+	 No matches for left argument
+23
+Arg1 =  el hombre 
+Rel =  apoyaba a 
+Arg2 =  los grupos antirracistas 
+###############
+En Indonesia , el delito de mostrar odio hacia el presidente conlleva una pena de seis años de cárcel .
+
+24
+Arg1 =  odio hacia el presidente 
+Rel =  conlleva una pena de 
+Arg2 =  años de cárcel 
+###############
+Por_lo_menos cuatro años tendrán que pasar antes_de que las Grandes_Ligas se decidan a dar la oportunidad a las ciudades de México o Monterrey ( que desde 1994 solicitaron ser incorporadas en una posible expansión ) .
+
+25
+\\Arg1 =  años 
+Rel =  tendrán 
+Arg2 =  las Grandes_Ligas 
+25
+	 No matches for right argument
+25
+470 517
+###############
+En una reunión convocada para examinar un informe final sobre las negociaciones de el pacto , la embajadora india Arundhati_Ghose atacó con vigor el texto , diciendo que es desequilibrado y violatorio de la soberanía de su país .
+
+26
+Arg1 =  una reunión 
+Rel =  convocada para examinar un informe final sobre 
+Arg2 =  las negociaciones de el pacto 
+\\Arg1 =  una reunión 
+Rel =  convocada para examinar un informe final sobre 
+Arg2 =  la embajadora india 
+26
+\\Arg1 =  Arundhati_Ghose 
+Rel =  atacó con 
+Arg2 =  vigor 
+26
+483 525
+###############
+" En la ceremonia hará_uso de la palabra mi general Pinochet , habrá una misa de campaña , se va a colocar una ofrenda floral y entregar medallas a los que estuvieron presentes " , señaló el portavoz militar .
+
+27
+\\Arg1 =  la ceremonia 
+Rel =  hará_uso de 
+Arg2 =  la palabra 
+27
+\\Arg1 =  la ceremonia 
+Rel =  habrá una misa de 
+Arg2 =  campaña 
+27
+\\Arg1 =  la ceremonia 
+Rel =  se va a colocar 
+Arg2 =  una ofrenda floral 
+27
+\\Arg1 =  medallas 
+Rel =  señaló 
+Arg2 =  el portavoz militar 
+###############
+En tanto , el local Banco_Mercantil inició este martes el proceso de subasta de los activos de Coca_Cola_Company en el país .
+
+28
+\\Arg1 =  el local Banco_Mercantil 
+Rel =  inició 
+Arg2 =  este martes 
+###############
+En julio_de_1995 las exportaciones fueron de 4.004_millones_de_dólares y las importaciones de 4.001_millones .
+
+29
+\\Arg1 =  las exportaciones 
+Rel =  fueron de 
+Arg2 =  las importaciones 
+###############
+En los siete primeros meses de 1996 la balanza comercial de Brasil arrojó un déficit de 630_millones_de_dólares , producto de exportaciones por 27.378_millones_de_dólares e importaciones de 28.008_millones , dijo el ministerio .
+
+30
+Arg1 =  la balanza comercial de Brasil 
+Rel =  arrojó un déficit de 
+Arg2 =  producto de exportaciones 
+30
+533 542
+###############
+En los 12 meses acumulados hasta julio , el saldo de la balanza comercial brasileña tuvo un superávit de 477_millones_de_dólares , frente_a un déficit de 1.801_millones en el año finalizado en julio_de_1995 , dijo el ministerio .
+
+31
+Arg1 =  meses 
+Rel =  acumulados hasta 
+Arg2 =  julio 
+\\Arg1 =  meses 
+Rel =  acumulados hasta 
+Arg2 =  el saldo de la balanza comercial brasileña 
+31
+\\Arg1 =  el saldo de la balanza comercial brasileña 
+Rel =  tuvo un superávit de 
+Arg2 =  un déficit 
+31
+Arg1 =  el año 
+Rel =  finalizado en 
+Arg2 =  julio_de_1995 
+31
+\\Arg1 =  el año 
+Rel =  dijo 
+Arg2 =  el ministerio 
+###############
+En la pizarra general , 44 emisoras avanzaron , 52 retrocedieron y 26 no sufrieron cambios .
+
+32
+\\Arg1 =  emisoras 
+Rel =  avanzaron 
+Arg2 =  52 
+32
+\\Arg1 =  52 
+Rel =  retrocedieron 
+Arg2 =  26 
+32
+Arg1 =  26 
+Rel =  no sufrieron 
+Arg2 =  cambios 
+###############
+En las últimas semanas , integrantes de su equipo de abogados aumentaron sus apariciones públicas en defensa de su cliente .
+
+33
+Arg1 =  abogados 
+Rel =  aumentaron sus apariciones públicas en 
+Arg2 =  defensa de su cliente 
+###############
+En otro incidente de piratería aérea ocurrido el viernes_,_tres cubanos obligaron a el piloto de una avioneta utilizada para viajes turísticos a dirigir se hacia el oeste de la Florida , acuatizando en el Golfo_de_México .
+
+34
+\\Arg1 =  cubanos 
+Rel =  obligaron a 
+Arg2 =  el piloto de una avioneta 
+34
+\\Arg1 =  el piloto de una avioneta 
+Rel =  utilizada para viajes turísticos a dirigir 
+Arg2 =  el oeste de la Florida 
+###############
+En el caso de Bélgica , dos niñas han sido asesinadas , otras dos fueron rescatadas por las autoridades y a el menos dos más se consideran como desaparecidas .
+
+35
+112 209
+35
+313 367
+###############
+En declaraciones realizadas luego_de una reunión con el consejo mundial de la FIA , Mosley dijo que las infracciones , exceder el nuevo límite de 50 kph para las áreas de asistencia en rally y de no seguir la ruta correcta para el control de el tiempo , nomalmente ocasionarían una suspensión de una o dos carreras .
+
+36
+Arg1 =  declaraciones 
+Rel =  realizadas luego_de una reunión con 
+Arg2 =  el consejo mundial de la FIA 
+\\Arg1 =  declaraciones 
+Rel =  realizadas luego_de una reunión con 
+Arg2 =  Mosley 
+36
+\\Arg1 =  Mosley 
+Rel =  dijo 
+Arg2 =  las infracciones 
+36
+806 814
+###############
+En la madrugada de este martes , un camión de carga que transitaba por la vía Catamayo-Loja atropelló a un grupo de personas que preparaban una procesión para recibir a la Vírgen_de_el_Cisne , venerada en esta provincia .
+
+37
+Arg1 =  un camión de carga 
+Rel =  transitaba por 
+Arg2 =  la vía 
+37
+276 313
+37
+Arg1 =  un grupo de personas 
+Rel =  preparaban una procesión para recibir 
+Arg2 =  la Vírgen_de_el_Cisne 
+37
+\\Arg1 =  un grupo de personas 
+Rel =  venerada en 
+Arg2 =  esta provincia 
+###############
+" En los últimos días ocurrieron hechos aislados en esa región , no hay una ola de violencia , " agregó .
+
+38
+\\Arg1 =  los últimos días 
+Rel =  ocurrieron 
+Arg2 =  hechos 
+38
+Arg1 =  hechos 
+Rel =  aislados en 
+Arg2 =  esa región 
+38
+\\Arg1 =  hechos 
+Rel =  no hay una ola de 
+Arg2 =  violencia 
+38
+297 312
+###############
+Por primera vez , China desplazó a Japón como el país con el que Estados_Unidos mantuvo el mayor déficit comercial .
+
+39
+Arg1 =  China 
+Rel =  desplazó a 
+Arg2 =  Japón 
+39
+Arg1 =  Estados_Unidos 
+Rel =  mantuvo 
+Arg2 =  el mayor déficit comercial 
+###############
+En junio , la brecha en el comercio de bienes cayó 13,9_por_ciento a 14.460_millones_de_dólares desde los 16.790_millones_de_dólares de mayo .
+
+40
+\\Arg1 =  bienes 
+Rel =  cayó 
+Arg2 =  mayo 
+###############
+En Alemania , el crecimiento de la oferta monetaria , la principal guía para el banco central de ese país , se hizo más lento a un ritmo anualizado de 8,6_por_ciento en julio , frente_a 9,6_por_ciento en junio .
+
+41
+345 353
+###############
+En sus tres primeros compromisos para Francia ' 98 , Ecuador goleó 4-1 a Perú , derrotó 2-0 a Argentina como local y perdió 1-4 ante Chile como visitante .
+
+42
+Arg1 =  Ecuador 
+Rel =  goleó 
+Arg2 =  Perú 
+42
+Arg1 =  Ecuador 
+Rel =  derrotó 
+Arg2 =  Argentina 
+42
+Arg1 =  Ecuador 
+Rel =  perdió 
+Arg2 =  Chile 
+###############
+De acuerdo a esa Ley , la programación de Hacienda requerirá la opinión de el Banco_Central_de_Venezuela y las opiniones favorables de las comisiones de Finanzas_de_el_Senado y de la Cámara_de_Diputados .
+
+43
+Arg1 =  la programación de Hacienda 
+Rel =  requerirá la opinión de 
+Arg2 =  el Banco_Central_de_Venezuela 
+Arg1 =  la programación de Hacienda 
+Rel =  requerirá la opinión de 
+Arg2 =  las opiniones favorables de las comisiones 
+###############
+De esta forma , el galés Ian_Woosnam podrá superar a Montgomerie a_el_frente_de la clasificación de el circuito europeo si logra terminar entre los dos primeros lugares .
+
+44
+Arg1 =  el galés Ian_Woosnam 
+Rel =  podrá superar a 
+Arg2 =  Montgomerie a_el_frente_de la clasificación 
+44
+363 373
+###############
+En Caquetá los campesinos exigieron la presencia de el ministro de el Interior , Horacio_Serpa para reanudar las negociaciones suspendidas desde el viernes anterior .
+
+45
+Arg1 =  los campesinos 
+Rel =  exigieron la presencia de 
+Arg2 =  el ministro de el Interior 
+Arg1 =  los campesinos 
+Rel =  exigieron la presencia de 
+Arg2 =  Horacio_Serpa 
+45
+Arg1 =  las negociaciones 
+Rel =  suspendidas desde 
+Arg2 =  el viernes anterior 
+###############
+" Por el momento no tengo proyectado ir ( a Caquetá ) " , dijo a el Noticiero_Nacional y pidió a los manifestantes que no se dejaran utilizar por la guerrilla para provocar enfrentamientos con la fuerza pública .
+
+46
+\\Arg1 =  el momento 
+Rel =  no tengo 
+Arg2 =  Caquetá 
+46
+\\Arg1 =  el momento 
+Rel =  dijo a 
+Arg2 =  el Noticiero_Nacional 
+46
+\\Arg1 =  el momento 
+Rel =  pidió a 
+Arg2 =  los manifestantes 
+###############
+En contraste con la actitud de el sector empresarial , el gobierno espera con gran interés a el dignatario japonés y ha organizado una reunión entre éste y todos los presidentes de el istmo centroamericano .
+
+47
+Arg1 =  el gobierno 
+Rel =  espera con 
+Arg2 =  gran interés a el dignatario japonés 
+47
+Arg1 =  el gobierno 
+Rel =  ha organizado una reunión entre 
+Arg2 =  los presidentes de el istmo centroamericano 
+###############
+En 1995 , Costa_Rica exportó a Japón productos por 26_millones_de_dólares , mientras_que las importaciones superan los 100_millones , de_acuerdo_con estadísticas oficiales .
+
+48
+\\Arg1 =  Costa_Rica 
+Rel =  exportó a 
+Arg2 =  Japón 
+48
+Arg1 =  las importaciones 
+Rel =  superan 
+Arg2 =  los 100_millones 
+###############
+En su discurso en Louisville , Dole acusó a el gobierno de el presidente Bill_Clinton de no asignar recursos adecuados para modernizar las fuerzas armadas , dependiendo demasiado de las misiones de las Naciones_Unidas .
+
+49
+Arg1 =  Dole 
+Rel =  acusó a 
+Arg2 =  el gobierno de el presidente Bill_Clinton 
+49
+Arg1 =  recursos 
+Rel =  adecuados para modernizar 
+Arg2 =  las fuerzas armadas 
+###############
+Por otra parte , una encuesta de el diario The_New_York_Times y de la cadena de televisión CBS confirmó que ese repunte de Dole comenzó a evaporar se a la semana de su convención .
+
+50
+Arg1 =  la cadena de televisión CBS 
+Rel =  confirmó 
+Arg2 =  ese repunte de Dole 
+50
+Arg1 =  ese repunte de Dole 
+Rel =  comenzó a evaporar 
+Arg2 =  la semana de su convención
+
+
+#######################
+88 facts 
+48 incorrect 
